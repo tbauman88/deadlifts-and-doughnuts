@@ -1,0 +1,33 @@
+mutation CreateDonut($donut: [donut_insert_input!]!) {
+  insert_donut(objects: $donut) {
+    returning {
+      id
+      name
+      description
+      price
+      image
+      created_at
+      updated_at
+    }
+  }
+}
+
+mutation UpdateDonut($id: uuid!, $donut: donut_set_input!) {
+  update_donut(where: { id: { _eq: $id } }, _set: $donut) {
+    returning {
+      id
+      name
+      description
+      price
+      image
+      created_at
+      updated_at
+    }
+  }
+}
+
+mutation DeleteDonut($id: uuid!) {
+  delete_donut(where: { id: { _eq: $id } }) {
+    affected_rows
+  }
+}

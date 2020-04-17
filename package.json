@@ -26,7 +26,7 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
-    "gql:codegen": "graphql-codegen --config codegen.yaml",
+    "gql:codegen": "graphql-codegen --config codegen.yml",
     "hasura:console": "hasura console --project ./hasura --admin-secret secret",
     "hasura:migrate": "hasura migrate apply --project ./hasura --admin-secret secret"
   },

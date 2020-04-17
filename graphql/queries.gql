@@ -1,0 +1,18 @@
+query GetAllDonuts {
+  donut(order_by: { name: asc }) {
+    id
+    name
+    description
+    price
+    image
+  }
+}
+
+query GetDonut($donut: String!) {
+  donut(where: { name: { _eq: $donut } }) {
+    name
+    description
+    price
+    image
+  }
+}

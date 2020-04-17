@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: DROP TABLE "public"."donut";
+  type: run_sql
