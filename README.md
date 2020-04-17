@@ -1,8 +1,51 @@
-# DeadliftsAndDoughnuts
+# Deadlifts & Doughnuts
+
+## Installation
+
+```bash
+$ yarn install
+```
+
+Copy the `.env.example` file to your own `.env`
+
+```bash
+$ cp .env.example .env
+```
+
+## Docker
+
+There is a `docker-compose.yml` file for starting Docker.
+
+```bash
+docker-compose up -d
+```
+
+After running the sample, you can stop the Docker container with
+
+```bash
+docker-compose down -v
+```
+
+## Hasura
+
+Run the migrations
+
+```bash
+yarn hasura:migrate
+```
+
+Start the console
+
+```bash
+yarn hasura:console
+```
+
+# NX Monorepo 
 
 This project was generated using [Nx](https://nx.dev).
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+<p><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="150"></p>
+
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
@@ -22,18 +65,15 @@ These capabilities include generating applications, libraries, etc as well as th
 
 Below are some plugins which you can add to your workspace:
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+[Angular](https://angular.io) 
+```bash
+ng add @nrwl/angular
+```
+
+[Nest](https://nestjs.com)
+```bash
+ng add @nrwl/nest
+```
 
 ## Generate an application
 

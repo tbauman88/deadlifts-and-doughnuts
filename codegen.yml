@@ -1,0 +1,14 @@
+schema:
+  - 'http://localhost:8088/v1/graphql':
+      headers:
+        x-hasura-admin-secret: secret
+documents: 'graphql/**/*.gql'
+generates:
+  libs/gql-hooks/src/lib/gql-hooks.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-apollo-angular
+    config:
+      withHooks: true
+      withHOC: false

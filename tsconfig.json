@@ -18,7 +18,8 @@
     "paths": {
       "@deadlifts-and-doughnuts/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
-      ]
+      ],
+      "@deadlifts-and-doughnuts/gql-hooks": ["libs/gql-hooks/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
